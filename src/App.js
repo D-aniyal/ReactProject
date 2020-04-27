@@ -1,21 +1,18 @@
 import React, { Component } from 'react';
 import './App.css';
-
-
+import Navbar from "./components/layout/Navbar";
+import Useritem from "./components/user/Useritem";
 
 class App extends Component {
+
   render() {
-const name = "daniyal" ;
+    //const number = [0,1,2,3];
 
-//const many = () =>  "fani";
-
-const loading = true;
-
- 
-    
 return (
       <div className="App">
-    { loading ? <h2> Loading...</h2> : <h1>Hello {name} </h1> } 
+      
+      <Navbar />
+       <Useritem />
     </div>
  
     );
